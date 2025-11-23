@@ -7,19 +7,50 @@
     <title>Svalbard | Showcase</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 
 <body class="bg-light text-dark" style="scroll-behavior:smooth;">
 
-    <!-- Hero Section -->
-    <section class="d-flex align-items-center justify-content-center text-center text-white position-relative"
-        style="height:70vh; background:url('https://eu-assets.simpleview-europe.com/svalbard/imageresizer/?image=%2Fdbimgs%2Fbl%C3%A5timefront.jpg&action=MediaGallery') center/cover no-repeat;">
-        <div class="position-absolute top-0 start-0 w-100 h-100" style="background:rgba(0,0,0,0.45);"></div>
-        <div class="position-relative z-1" data-aos="fade-up">
-            <h1 class="fw-bold display-4">Svalbard</h1>
-            <p class="lead mt-3 mx-auto" style="max-width:700px;">A glimpse into the edge of the world where silence
-                meets light.</p>
+    <!-- Hero Carousel (automatic) -->
+    <section>
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4500">
+            <div class="carousel-top position-absolute top-0 start-0 w-100 py-3" style="z-index:3; pointer-events:none;">
+                <div class="container text-center text-white" style="pointer-events:auto;">
+                    <h1 class="fw-bold display-4 mt-5" style="text-shadow: 0 2px 8px rgba(0,0,0,0.6);">Svalbard</h1>
+                </div>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="height:70vh; background:url('https://eu-assets.simpleview-europe.com/svalbard/imageresizer/?image=%2Fdbimgs%2F1750x540-tempelfjorden.jpg&action=MediaGallery') center/cover no-repeat;">
+                    <div class="position-absolute top-0 start-0 w-100 h-100" style="background:rgba(0,0,0,0.45);"></div>
+
+                </div>
+                <div class="carousel-item" style="height:70vh; background:url('https://eu-assets.simpleview-europe.com/svalbard/imageresizer/?image=%2Fdbimgs%2Fbl%C3%A5timefront.jpg&action=MediaGallery') center/cover no-repeat;">
+                    <div class="position-absolute top-0 start-0 w-100 h-100" style="background:rgba(0,0,0,0.45);"></div>
+                    
+                </div>
+                <div class="carousel-item" style="height:70vh; background:url('https://eu-assets.simpleview-europe.com/svalbard/imageresizer/?image=%2Fdbimgs%2Fisbj%C3%B8rnfront.jpg&action=MediaGallery') center/cover no-repeat;">
+                    <div class="position-absolute top-0 start-0 w-100 h-100" style="background:rgba(0,0,0,0.45);"></div>
+                   
+                </div>
+                <div class="carousel-item" style="height:70vh; background:url('https://eu-assets.simpleview-europe.com/svalbard/imageresizer/?image=%2Fdbimgs%2Ffrontrev1.jpg&action=MediaGallery') center/cover no-repeat;">
+                    <div class="position-absolute top-0 start-0 w-100 h-100" style="background:rgba(0,0,0,0.45);"></div>
+                   
+                </div>
+            </div>
+            <!-- Bottom caption placed over the carousel -->
+            <div class="carousel-bottom position-absolute bottom-0 start-0 w-100 py-3" style="z-index:3; pointer-events:none;">
+                <div class="container" style="pointer-events:auto;">
+                    <p class="text-white text-center mx-auto d-block" style="max-width:800px; margin-bottom:0; text-shadow: 0 1px 6px rgba(0,0,0,0.45);">A glimpse into the edge of the world where silence meets light.</p>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </section>
 
@@ -27,11 +58,11 @@
     <section class="bg-white py-5">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                <div class="col-lg-6 mb-4 mb-lg-0">
                     <img src="https://eu-assets.simpleview-europe.com/svalbard/imageresizer/?image=%2Fdbimgs%2Fphoto%20610%20x%20460%20LYR%20kvabbe%281%29.jpg&action=FeaturedItems1x1"
                         class="img-fluid rounded shadow-sm" alt="Svalbard landscape" />
                 </div>
-                <div class="col-lg-6" data-aos="fade-left">
+                <div class="col-lg-6">
                     <h2 class="fw-bold mb-4">About Svalbard</h2>
                     <p class="lead text-muted">Svalbard is a remote Arctic archipelago located halfway between mainland
                         Norway and the North Pole. It's one of the northernmost inhabited places on Earth where polar
@@ -46,35 +77,30 @@
     <!-- Reasons Section -->
     <section class="bg-light text-center py-5">
         <div class="container">
-            <h2 class="fw-bold mb-5" data-aos="fade-up">What Makes It Special</h2>
+            <h2 class="fw-bold mb-5">What Makes It Special</h2>
             <div class="row g-4 justify-content-center">
-                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="card border-0 shadow-sm h-100 py-4 px-3">
-                        <img src="https://eu-assets.simpleview-europe.com/svalbard/imageresizer/?image=%2Fdbimgs%2Fskuternavlargesesong.jpg&action=FeaturedItems1x1"
-                            alt="Polar Wilderness" class="w-100 mb-3 rounded" style="height:200px; object-fit:cover;">
-                        <div class="card-body">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100 py-4 px-3 reason-card">
+                        <div class="hover-img rounded" style="background-image:url('https://eu-assets.simpleview-europe.com/svalbard/imageresizer/?image=%2Fdbimgs%2Fskuternavlargesesong.jpg&action=FeaturedItems1x1');"></div>
+                        <div class="card-body position-relative z-1">
                             <h5 class="fw-bold">Polar Wilderness</h5>
-                            <p class="text-muted">Svalbard captures the untouched essence of Earth’s frozen frontier.
-                            </p>
+                            <p class="text-muted">Svalbard captures the untouched essence of Earth’s frozen frontier.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="card border-0 shadow-sm h-100 py-4 px-3">
-                        <img src="https://eu-assets.simpleview-europe.com/svalbard/imageresizer/?image=%2Fdbimgs%2FNordlysvinterNyNavLarge.jpg&action=FeaturedItems1x1"
-                            alt="Northern Lights & Midnight Sun" class="w-100 mb-3 rounded"
-                            style="height:200px; object-fit:cover;">
-                        <div class="card-body">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100 py-4 px-3 reason-card">
+                        <div class="hover-img rounded" style="background-image:url('https://eu-assets.simpleview-europe.com/svalbard/imageresizer/?image=%2Fdbimgs%2FNordlysvinterNyNavLarge.jpg&action=FeaturedItems1x1');"></div>
+                        <div class="card-body position-relative z-1">
                             <h5 class="fw-bold">Northern Lights</h5>
-                            <p class="text-muted">Experience the glow and magic of Northen Lights Winter.</p>
+                            <p class="text-muted">Experience the glow and magic of Northern Lights Winter.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="card border-0 shadow-sm h-100 py-4 px-3">
-                        <img src="https://eu-assets.simpleview-europe.com/svalbard/imageresizer/?image=%2Fdbimgs%2Fstorsl%C3%A5ttNavLarge.jpg&action=FeaturedItems1x1"
-                            alt="Arctic Adventure" class="w-100 mb-3 rounded" style="height:200px; object-fit:cover;">
-                        <div class="card-body">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100 py-4 px-3 reason-card">
+                        <div class="hover-img rounded" style="background-image:url('https://eu-assets.simpleview-europe.com/svalbard/imageresizer/?image=%2Fdbimgs%2Fstorsl%C3%A5ttNavLarge.jpg&action=FeaturedItems1x1');"></div>
+                        <div class="card-body position-relative z-1">
                             <h5 class="fw-bold">Arctic Adventure</h5>
                             <p class="text-muted">Outdoor activities done in a quiet wonder.</p>
                         </div>
@@ -86,7 +112,7 @@
 
     <!-- Reflection Section -->
     <section class="bg-white text-center py-5">
-        <div class="container" data-aos="fade-up">
+        <div class="container">
             <h2 class="fw-bold mb-4"><i>Polar Bug</i></h2>
             <p class="lead w-75 mx-auto text-muted">Svalbard represents a place of peace, with the kind of beauty
                 that humbles you. It’s a place far removed from noise and routine that is a reminder that silence, too,
@@ -102,10 +128,18 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({ duration: 1000, once: true });
-    </script>
+    <style>
+        .reason-card { position: relative; overflow: hidden; min-height: 360px; padding: 2rem !important; }
+        .reason-card .hover-img { position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0; transition: opacity .35s ease; z-index: 0; }
+        .reason-card .card-body { z-index: 2; position: relative; }
+        .reason-card:hover .hover-img { opacity: 1; }
+        .reason-card .hover-img::after { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0.25); }
+
+        @media (max-width: 767px) {
+            .carousel-top h1 { font-size: 1.75rem; }
+            .reason-card { min-height: 320px; padding: 1.25rem !important; }
+        }
+    </style>
 </body>
 
 </html>
